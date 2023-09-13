@@ -85,31 +85,7 @@ const SlideList = ({ title, handleClick }) => {
   );
 };
 
-const Background = ({ src }) => {
-  return (
-    <Image
-      alt={losung}
-      src={src}
-      //   placeholder="blur"
-      quality={100}
-      fill
-      //   sizes="100vw"
-      //   width="100vw"
-      //   height="100vh"
-      style={{
-        objectFit: 'cover',
-      }}
-    />
-  );
-};
 const About = () => {
-  const [swiper, setSwiper] = useState(null);
-
-  const handleSlideChange = index => {
-    if (swiper) {
-      swiper.slideTo(index); // Переміщуємо Swiper до вказаного індексу слайда
-    }
-  };
   return (
     <>
       <section
@@ -117,45 +93,7 @@ const About = () => {
         data-section-id="about"
         id="about"
       >
-        <Swiper
-          effect={'fade'}
-          onSwiper={s => setSwiper(s)} // Зберігаємо посилання на Swiper
-          //   navigation={true}
-          modules={[EffectFade]}
-          // Додаємо навігаційні кнопки (можна замінити на свої)
-        >
-          {/* <Swiper> */}
-          {about.map(({ id, bg, img, losung, title, description }) => (
-            <div key={id} className="bg-black min-h-[542px] ">
-              {/* <Background src={bg}> */}
-              <SwiperSlide
-                className="bg-cover bg-center"
-                style={{
-                  background: `linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0.00) 100%), url(${bg})`,
-
-                  //   backgroundImage: `url(${bg})`,
-                  //   backgroundColor: 'rgba(2, 15, 8, 0.25)', // Шлях до зображення з папки public
-                  backgroundColor: 'rgba(10, 24, 19, 1)',
-                  minHeight: '650px',
-                  //   opacity: '25%', // Мінімальна висота, щоб забезпечити фон на весь екран
-                }}
-              >
-                <div className="container py-[54px]">
-                  <Title title="We" accent="Offer" />
-                  <p>
-                    {id}
-                    <span>/05</span>{' '}
-                  </p>
-                  <Image alt={title} src={img} width={280} height={213} />
-                  <SlideList title={title} handleClick={handleSlideChange} />
-                  <p>{description}</p>
-                </div>
-              </SwiperSlide>
-              {/* </Background> */}
-            </div>
-          ))}
-          {/* </Swiper> */}
-        </Swiper>
+        <div className="container"></div>
       </section>
     </>
   );

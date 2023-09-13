@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 import menu from '../data/menu';
 
-const duration = 600;
+const duration = 400;
 
 const Navbar = () => {
   return (

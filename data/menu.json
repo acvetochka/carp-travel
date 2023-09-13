@@ -5,6 +5,11 @@
     "text": "About"
   },
   {
+    "id": 2,
+    "src": "services",
+    "text": "Services"
+  },
+  {
     "id": 4,
     "src": "gallery",
     "text": "Gallery"

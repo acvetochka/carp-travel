@@ -3,6 +3,7 @@ import Hero from '../components/Hero';
 import Gallery from '../components/Gallery';
 import Contacts from '@/components/Contacts';
 import About from '@/components/About';
+import Services from '@/components/Services';
 
 export default function Home({ title }) {
   title = 'CarpTravel';
@@ -10,7 +11,8 @@ export default function Home({ title }) {
     <main>
       <Header />
       <Hero />
-      <About />
+      {/* <About /> */}
+      <Services />
       <Gallery />
       <Contacts />
     </main>
