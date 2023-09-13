@@ -18,10 +18,110 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  color: #fff;
+    background-color: #0B1917;
+  }
+  
+  .hero-bg {
+    background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
+      url('/hero-bg.png');
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .gallery-bg {
+    background-color: #001826;
+    background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.85) 100%, rgba(0, 37, 49, 0.00) 100%),
+      url('/gallery-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .contact-bg {
+    background: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.75) 100%, rgba(0, 37, 49, 0.00) 100%), url('/contact-bg.png'),
+      url('/contact-bg.png');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  
+  
+  .mySwiper.swiper-3d {
+    perspective: none;
+    align-items: center;
+  
+  }
+  
+  .swiper-wrapper {
+    align-items: center;
+  }
+  
+  .customSlide.swiper-slide {
+    height: auto;
+    transition: transform 0.9s ease;
+  }
+  
+  .customSlide.swiper-slide-active {
+    max-width: 415px;
+    width: 100% !important;
+  }
+  
+  .swiper-slide-prev.customSlide,
+  .swiper-slide-next.customSlide {
+    max-width: 121px;
+    width: 50% !important;
+    background: rgba(2, 15, 8, 0.75);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    opacity: 0.75;
+    filter: brightness(.5);
+  
+  }
+  
+  
+  .mySwiper .swiper-button-prev,
+  .mySwiper .swiper-button-next {
+    top: calc(100% - 32px);
+  }
+  
+  .mySwiper .swiper-button-prev {
+    left: 60px;
+  }
+  
+  .mySwiper .swiper-button-next {
+    right: 60px;
+  }
+  
+  .mySwiper .swiper-button-prev:after,
+  .mySwiper .swiper-button-next:after {
+    color: #fff;
+    text-transform: uppercase !important;
+    font-size: 33px;
+    font-weight: 100 !important;
+    bottom: 12px;
+    top: 0 !important;
+    font-family: '__Inter_20951f';
+  }
+  
+  @media screen and (min-width: 1280px) {
+    .customSlide.swiper-slide-active {
+      max-width: 606px;
+    }
+  
+    .swiper-slide-prev.customSlide,
+    .swiper-slide-next.customSlide {
+      max-width: 300px;
+    }
+  
+    .mySwiper .swiper-button-prev {
+      left: 220px;
+    }
+  
+    .mySwiper .swiper-button-next {
+      right: 220px;
+    }
 }
+

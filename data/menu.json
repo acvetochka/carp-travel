@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "src": "about",
+    "text": "About"
+  },
+  {
+    "id": 4,
+    "src": "gallery",
+    "text": "Gallery"
+  },
+  {
+    "id": 5,
+    "src": "contacts",
+    "text": "Contacts"
+  }
+]

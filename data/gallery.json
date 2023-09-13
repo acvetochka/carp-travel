@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "src": "/gallery/photo1.png",
+    "alt": "high-angle-shot-beautiful-mountainous-landscape-with-hills-cloudy-sky"
+  },
+  {
+    "id": 2,
+    "src": "/gallery/photo2.png",
+    "alt": "mountains-with-trees-and-house"
+  },
+  {
+    "id": 3,
+    "src": "/gallery/photo3.png",
+    "alt": "breathtaking-view-lake-high-carpathian-mountains"
+  }
+]
