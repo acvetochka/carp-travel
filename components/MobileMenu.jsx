@@ -4,6 +4,11 @@ import menu from '../data/menu';
 
 const menuArr = menu.map(item => ({ ...item, src: `#${item.src}` }));
 
+  // {
+  //   "id": 1,
+  //   "src": "about",
+  //   "text": "About"
+  // },
 // {
 //   "id": 3,
 //   "src": "career",
