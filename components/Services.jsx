@@ -99,9 +99,7 @@ const Services = () => {
                     className="mb-3 md:row-start-2 md:row-end-[span_4] w-full md:mb-0 md:h-[370px] xl:row-end-[span_2] xl:h-[429px]"
                   />
                   <p
-                    className={`text-label font-extralight text-right mb-6 md:row-start-3 md:col-start-2 md:text-left xl:row-start-2 xl:col-start-3 xl:pt-[${
-                      idx * 30
-                    }px]`}
+                    className={`text-label font-extralight text-right mb-6 md:row-start-3 md:col-start-2 md:text-left xl:row-start-2 xl:col-start-3 `}
                   >
                     {losung}
                   </p>
