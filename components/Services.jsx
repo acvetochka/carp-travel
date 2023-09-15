@@ -19,27 +19,30 @@ const menuSlider = [
   'Rafting',
 ];
 
-const SlideList = ({ title, handleClick }) => {
+const SlideList = ({ title, activeSlide, onMenuButtonClick }) => {
   return (
     <ul className="list-none p-0 flex flex-col gap-4 md:row-start-2 md:col-start-2 mb-5">
       {menuSlider.map((item, idx) => (
         <li
           key={title + idx}
           className={`flex items-center uppercase text-lg-m md:text-lg-t xl:text-lg-d font-extralight cursor-pointer ${
-            item === title
+            idx === activeSlide
               ? 'opacity-100 font-medium'
               : ' opacity-50 hover:pl-1 hover:opacity-100'
           }`}
         >
-          <button onClick={() => handleClick(idx)}>
+          <button
+            className="flex items-center uppercase text-left"
+            onClick={() => onMenuButtonClick(idx)}
+          >
             <TbDiamondsFilled
               size={10}
               className={`mr-2 ${
-                item === title ? 'block opacity-100' : 'hidden'
+                idx === activeSlide ? 'block opacity-100' : 'hidden'
               }`}
             />
+            {item}
           </button>
-          {item}
         </li>
       ))}
     </ul>
@@ -49,18 +52,13 @@ const SlideList = ({ title, handleClick }) => {
 const Services = () => {
   const [swiper, setSwiper] = useState(null);
 
-  const handleSlideChange = index => {
+  const handleMenuButtonClick = slideIndex => {
     if (swiper) {
-      const slideId = `slide-${index}`;
-      const slideElement = document.getElementById(slideId);
-      console.log(slideElement);
-      console.log(slideId);
-      console.log(swiper);
-      if (slideElement) {
-        swiper.slideTo(slideElement, 500);
-      }
+      console.log(slideIndex);
+      swiper.slideTo(slideIndex);
     }
   };
+
   return (
     <>
       <section
@@ -72,23 +70,23 @@ const Services = () => {
           effect={'fade'}
           onSwiper={s => setSwiper(s)}
           modules={[EffectFade]}
+          slidesPerView={1}
           className="min-h-[795px]"
         >
           {services.map((item, idx) => {
             const { id, bg, img, losung, title, description } = item;
+
             return (
               <div key={id} className="bg-black">
                 <SwiperSlide
                   key={id}
                   className="bg-cover bg-center bg-opacity-75 min-h-[815px]"
-                  id={`slide-${idx}`}
                   style={{
                     background: `linear-gradient(180deg, #001826 0%, rgba(0, 37, 49, 0.25) 40%, rgba(10, 24, 19, 0.75) 75%, rgba(0, 37, 49, 0.75) 100%),url(${bg}) center / cover no-repeat
                   `,
-                    //   minHeight: [795px],
                   }}
                 >
-                  <div className="container py-[54px] min-h-screen  flex flex-col md:grid md:grid-cols-[463px_221px] md:grid-rows-[80px_167px_24px_120px] md:gap-x-5 md:gap-y-8 xl:grid-cols-[607px_292px_293px] xl:grid-rows-[119px_261px_168px] xl:gap-y-0">
+                  <div className="container py-[54px] min-h-screen  flex flex-col md:grid md:grid-cols-[463px_221px] md:grid-rows-[80px_167px_24px_120px] md:gap-x-5 md:gap-y-8 xl:grid-cols-[607px_292px_293px] xl:grid-rows-[137px_261px_168px] xl:gap-y-0">
                     <Title
                       title="We"
                       accent="Offer"
@@ -106,11 +104,19 @@ const Services = () => {
                       className="mb-3 md:row-start-2 md:row-end-[span_4] w-full md:mb-0 md:h-[370px] xl:row-end-[span_2] xl:h-[429px]"
                     />
                     <p
-                      className={`text-label font-extralight text-right mb-6 md:row-start-3 md:col-start-2 md:text-left xl:row-start-2 xl:col-start-3 `}
+                      className={`text-label font-extralight text-right mb-6 md:row-start-3 md:col-start-2 md:text-left xl:row-start-2 xl:col-start-3  ${
+                        idx >= 2
+                          ? `xl:pt-[${idx * 30 + 15}px]`
+                          : `xl:pt-[${idx * 30}px]`
+                      }`}
                     >
                       {losung}
                     </p>
-                    <SlideList title={title} handleClick={handleSlideChange} />
+                    <SlideList
+                      title={title}
+                      activeSlide={idx}
+                      onMenuButtonClick={handleMenuButtonClick}
+                    />
                     <p className="font-extralight text-base-m md:text-[13px] xl:text-base-d md:text-justify mt-auto md:row-start-4 md:col-start-2 md:self-end xl:row-start-3 xl:col-start-3">
                       {description}
                     </p>
