@@ -4,17 +4,23 @@ import Gallery from '../components/Gallery';
 import Contacts from '@/components/Contacts';
 import About from '@/components/About';
 import Services from '@/components/Services';
+import RootLayout from './layout';
 
-export default function Home({ title }) {
-  title = 'CarpTravel';
+export default function Home() {
+  // {
+  //   title;
+  // }
+  // const title = ;
   return (
-    <main>
-      <Header />
-      <Hero />
-      {/* <About /> */}
-      <Services />
-      <Gallery />
-      <Contacts />
-    </main>
+    <RootLayout pageTitle="CarpTravel">
+      <main>
+        <Header />
+        <Hero />
+        {/* <About /> */}
+        <Services />
+        <Gallery />
+        <Contacts />
+      </main>
+    </RootLayout>
   );
 }
