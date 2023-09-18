@@ -30,6 +30,7 @@ const Header = () => {
             width={61}
             height={33}
             style={{ width: 'auto' }}
+            priority
           />
         </Link>
         {isMobile ? (

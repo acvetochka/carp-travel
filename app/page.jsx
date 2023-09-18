@@ -12,7 +12,7 @@ export default function Home() {
   // }
   // const title = ;
   return (
-    <RootLayout pageTitle="CarpTravel">
+    <RootLayout>
       <main>
         <Header />
         <Hero />

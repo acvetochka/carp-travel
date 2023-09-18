@@ -16,7 +16,7 @@ const social = [
 const Contacts = () => {
   return (
     <section
-      className="contact-bg min-h-screen bg-opacity-75 py-14 md:py-16 xl:py-20"
+      className="contact-bg bg-opacity-75 py-14 md:py-16 xl:py-20"
       data-section-id="contacts"
       id="contacts"
     >
