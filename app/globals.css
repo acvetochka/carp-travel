@@ -22,13 +22,20 @@ body {
     background-color: #0B1917;
   }
   
-  .hero-bg {
-    background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
-      url('/hero-bg.png');
-  
-    background-repeat: no-repeat;
+.hero-bg {
+  background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
+    url('/hero-bg.png');
+  background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+  }
+
+.about-bg {
+  background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
+    url('/about-bg.png');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: left;
   }
   
   .gallery-bg {
@@ -85,11 +92,17 @@ body {
   .mySwiper .swiper-button-prev,
   .mySwiper .swiper-button-next {
     top: calc(100% - 32px);
+    tab-size: 4;
+      /* min-width: 90px; */
   }
   
   .mySwiper .swiper-button-prev {
     left: 60px;
   }
+.mySwiper .swiper-button-prev:focus-within {
+  /* left: 60px; */
+  outline: #fff;
+}
   
   .mySwiper .swiper-button-next {
     right: 60px;
@@ -97,13 +110,15 @@ body {
   
   .mySwiper .swiper-button-prev:after,
   .mySwiper .swiper-button-next:after {
-    color: #fff;
+    /* content: ''; */
+      color: #fff;
     text-transform: uppercase !important;
     font-size: 33px;
     font-weight: 100 !important;
     bottom: 12px;
     top: 0 !important;
     font-family: '__Inter_20951f';
+    
   }
   
   @media screen and (min-width: 1280px) {
@@ -117,11 +132,13 @@ body {
     }
   
     .mySwiper .swiper-button-prev {
-      left: 220px;
+      /* left: 210px; */
+        left: 90px;
     }
   
     .mySwiper .swiper-button-next {
-      right: 220px;
+      /* right: 180px; */
+        right: 90px;
     }
 }
 

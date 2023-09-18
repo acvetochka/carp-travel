@@ -1,9 +1,18 @@
 [
-
+  {
+    "id": 1,
+    "src": "about",
+    "text": "About"
+  },
   {
     "id": 2,
     "src": "services",
     "text": "Services"
+  },
+  {
+    "id": 3,
+    "src": "career",
+    "text": "Career"
   },
   {
     "id": 4,

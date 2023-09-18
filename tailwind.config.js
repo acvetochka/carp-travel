@@ -34,7 +34,7 @@ module.exports = {
       'title-m': ['40px', { lineHeight: '56px', letterSpacing: '-1.6px' }],
       'title-t': ['67px', { lineHeight: 'normal', letterSpacing: '-2.68px' }],
       'title-d': ['98px', { lineHeight: 'normal', letterSpacing: '-3.92px' }],
-      'btn-m': ['18px', '48px'],
+      'btn-m': ['18px', '64px'],
       'sm-t': ['14px'],
       'base-t': ['16px', 'normal'],
       'lg-t': ['22px', '18px'],
