@@ -1,0 +1,18 @@
+{
+  "tel": [
+    {
+      "id": 1,
+      "href": "tel:+380981234567",
+      "text": "+38 (098) 12 34 567"
+    },
+    {
+      "id": 2,
+      "href": "tel:+380731234567",
+      "text": "+38 (073) 12 34 567"
+    }
+  ],
+  "mail": {
+    "href": "mailto:support@carptravel.com",
+    "text": "support@carptravel.com"
+  }
+}
