@@ -56,7 +56,7 @@ const GallerySwiper = () => {
       // keyboard={{ enabled: true, onlyInViewport: false }}
       modules={[EffectCoverflow, Navigation]}
       // onSwiper={handleSwiperInit}
-      className="w-full mx-[-24px] mySwiper"
+      className="w-full mx-[-24px] mySwiper max-md:hidden"
     >
       {swiperGallery.map(({ id, src, alt }) => (
         <SwiperSlide key={id} className="customSlide">

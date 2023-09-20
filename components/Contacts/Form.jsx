@@ -44,7 +44,7 @@ const Form = () => {
           textError={'Invalid email'}
         />
       </div>
-      <div className="flex-1">
+      <div className="flex-1 flex w-full flex-col">
         <label className="flex flex-col text-label font-extralight mb-4">
           Message
           <textarea
@@ -52,7 +52,10 @@ const Form = () => {
             className="resize-none placeholder:text-[13px] bg-white/5 focus:bg-white/10  border-none h-[196px] md:h-[221px] xl:h-[174px]"
           ></textarea>
         </label>
-        <button type="submit" className="text-xl-m uppercase text-right w-full">
+        <button
+          type="submit"
+          className="text-xl-m uppercase text-right self-end"
+        >
           Send
         </button>
       </div>

@@ -13,7 +13,9 @@ const Gallery = () => {
       <div className="container md:text-center xl:text-start">
         <Title title="Our" accent="Gallery" />
         <div className="mt-6 md:mt-16 xl:mt-4">
-          {isMobile ? <GalleryList /> : <GallerySwiper />}
+          {/* {isMobile ? <GalleryList /> : <GallerySwiper />} */}
+          <GalleryList />
+          <GallerySwiper />
         </div>
       </div>
     </Section>

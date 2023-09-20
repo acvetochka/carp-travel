@@ -5,6 +5,7 @@ import Services from '@/components/Services/Services';
 import Career from '@/components/Career/Career';
 import Gallery from '../components/Gallery/Gallery';
 import Contacts from '@/components/Contacts/Contacts';
+// import MobileMenu from '@/components/MobileMenu';
 
 export default function Home() {
   return (

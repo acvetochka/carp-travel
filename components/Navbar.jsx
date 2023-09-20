@@ -8,7 +8,7 @@ const duration = 400;
 
 const Navbar = () => {
   return (
-    <ul className="flex md:gap-6 xl:gap-14">
+    <ul className="flex md:gap-6 xl:gap-14 max-md:hidden">
       {menu.map(({ id, src, text }, idx) => (
         <li key={id}>
           <Link
