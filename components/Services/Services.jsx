@@ -1,16 +1,15 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-// import Image from 'next/image';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-import SlideList from './SlideList';
 
-import services from '../../data/services';
+import SlideList from './SlideList';
 import ServicesSlideInfo from './ServicesSlideInfo';
+import services from '../../data/services';
 
 const Services = () => {
   const [swiper, setSwiper] = useState(null);
@@ -20,14 +19,13 @@ const Services = () => {
     if (swiper) {
       swiper.on('slideChange', () => {
         setActiveSlide(swiper.realIndex);
-        console.log(swiper);
+        // console.log(swiper);
       });
     }
   }, [swiper]);
 
   const handleMenuButtonClick = slideIndex => {
     if (swiper) {
-      console.log(slideIndex);
       swiper.slideTo(slideIndex);
     }
   };
@@ -61,7 +59,7 @@ const Services = () => {
                     `,
                   }}
                 >
-                  <ServicesSlideInfo item={item} />
+                  <ServicesSlideInfo item={item} idx={swiper?.activeIndex} />
                 </SwiperSlide>
               </div>
             );

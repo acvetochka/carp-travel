@@ -61,7 +61,11 @@ body {
     background-position: center;
   }
   
-  
+    @media not all and (min-width: 1280px) {
+      .losung {
+        padding-top: 0px !important;
+      }
+    }
   
   .mySwiper.swiper-3d {
     perspective: none;

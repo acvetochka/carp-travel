@@ -27,6 +27,7 @@ const SlideList = ({ activeSlide, onMenuButtonClick }) => {
               }`}
             >
               <button
+                type="button"
                 className="flex items-center uppercase text-left"
                 onClick={() => onMenuButtonClick(idx)}
               >

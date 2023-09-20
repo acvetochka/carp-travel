@@ -17,6 +17,8 @@ const Form = () => {
     console.log(data);
   };
 
+  const reset = () => {};
+
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

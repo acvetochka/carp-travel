@@ -36,6 +36,7 @@ const Header = () => {
         {isMobile ? (
           <div className="relative">
             <button
+              type="button"
               className="block lg:hidden uppercase"
               onClick={openMobileMenu}
             >

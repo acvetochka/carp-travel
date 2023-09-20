@@ -21,7 +21,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
             </li>
           ))}
         </ul>
-        <button className="absolute top-11 right-5 uppercase" onClick={onClose}>
+        <button type="button" className="absolute top-11 right-5 uppercase" onClick={onClose}>
           Close
         </button>
       </div>
