@@ -43,8 +43,8 @@ const Header = () => {
           </button>
           <Navbar />
           {/* {isMobile ? (
-          // <div className="relative">
-          <>
+            // <div className="relative">
+            // <>
             <button
               type="button"
               className="block md:hidden uppercase"
@@ -52,11 +52,11 @@ const Header = () => {
             >
               Menu
             </button>
-          </>
-        ) : (
-          // </div>
-          <Navbar />
-        )} */}
+          ) : (
+            // </>
+            // </div>
+            <Navbar />
+          )} */}
         </div>
         {/* <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} /> */}
       </header>

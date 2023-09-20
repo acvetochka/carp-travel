@@ -33,43 +33,44 @@ const GallerySwiper = () => {
   // };
 
   return (
-    <Swiper
-      // ref={swiperRef}
-      effect={'coverflow'}
-      // speed={1500}
-      initialSlide={initialSlideIndex}
-      hashNavigation={true}
-      navigation={true}
-      grabCursor={true}
-      centeredSlides={true}
-      slidesPerView={3}
-      spaceBetween={24}
-      coverflowEffect={{
-        rotate: 0,
-        // stretch: -50,
-        scale: 1,
-        // depth: 200,
-        modifier: 1,
-        slideShadows: true,
-      }}
-      loop={true}
-      // keyboard={{ enabled: true, onlyInViewport: false }}
-      modules={[EffectCoverflow, Navigation]}
-      // onSwiper={handleSwiperInit}
-      className="w-full mx-[-24px] mySwiper max-md:hidden"
-    >
-      {swiperGallery.map(({ id, src, alt }) => (
-        <SwiperSlide key={id} className="customSlide">
-          <Image
-            src={src}
-            alt={alt}
-            width={606}
-            height={429}
-            className="w-full"
-          />
-        </SwiperSlide>
-      ))}
-      {/* <button
+    <div className="max-md:hidden">
+      <Swiper
+        // ref={swiperRef}
+        effect={'coverflow'}
+        // speed={1500}
+        initialSlide={initialSlideIndex}
+        hashNavigation={true}
+        navigation={true}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={3}
+        spaceBetween={24}
+        coverflowEffect={{
+          rotate: 0,
+          // stretch: -50,
+          scale: 1,
+          // depth: 200,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        loop={true}
+        // keyboard={{ enabled: true, onlyInViewport: false }}
+        modules={[EffectCoverflow, Navigation]}
+        // onSwiper={handleSwiperInit}
+        className="w-full mx-[-24px] mySwiper max-md:hidden"
+      >
+        {swiperGallery.map(({ id, src, alt }) => (
+          <SwiperSlide key={id} className="customSlide">
+            <Image
+              src={src}
+              alt={alt}
+              width={606}
+              height={429}
+              className="w-full"
+            />
+          </SwiperSlide>
+        ))}
+        {/* <button
         className="swiper-button-prev focus:outline-none focus:ring focus:border-blue-300"
         ref={prevButtonRef}
         tabIndex="0"
@@ -83,7 +84,8 @@ const GallerySwiper = () => {
       >
         Next
       </button> */}
-    </Swiper>
+      </Swiper>
+    </div>
   );
 };
 

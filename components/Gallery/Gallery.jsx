@@ -7,7 +7,7 @@ import GallerySwiper from './GallerySwiper';
 import Section from '../Section';
 
 const Gallery = () => {
-  const isMobile = useMediaQuery({ maxWidth: 768 });
+  // const isMobile = useMediaQuery({ maxWidth: 768 });
   return (
     <Section id="gallery" className="gallery-bg">
       <div className="container md:text-center xl:text-start">
