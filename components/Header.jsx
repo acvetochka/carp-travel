@@ -39,7 +39,7 @@ const Header = () => {
               className="block lg:hidden uppercase"
               onClick={openMobileMenu}
             >
-              Меню
+              Menu
             </button>
             <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
           </div>

@@ -35,9 +35,15 @@ body {
     url('/about-bg.png');
   background-repeat: no-repeat;
     background-size: cover;
-    background-position: left;
+      /* background-position: center; */
+        background-position: 20% 50%;
   }
   
+        /* @media screen and (min-width: 768px) {
+          .about-bg {
+            background-position: center;
+          }
+        } */
   .gallery-bg {
     background-color: #001826;
     background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.85) 100%, rgba(0, 37, 49, 0.00) 100%),
