@@ -13,30 +13,19 @@ const Career = () => {
         <Title
           title={title}
           accent={titleAccent}
-          className="md:col-start-1 md:col-end-3 xl:col-end-2"
+          className="max-md:mb-6 md:col-start-1 md:col-end-3 xl:col-end-2"
         />
 
-        <p className="text-base-m font-extralight w-[179px] self-end md:row-start-1 md:col-start-3 ">
+        <p className="text-base-m font-extralight w-[179px] self-end md:row-start-1 md:col-start-3 md:w-full md:text-[13px]">
           {offer}
         </p>
-        <span className="uppercase text-[30px] md:row-start-2 md:col-start-1 md:text-right">
+        <span className="uppercase max-md:py-[36px] text-[30px] md:row-start-2 md:col-start-1 md:text-right">
           {span}
         </span>
         <CareerAdvantages advantages={advantages} />
-        {/* <ul className="flex flex-col gap-4 w-[181px] self-start text-right">
-          {advantages.map((item, idx) => {
-            const { itemTitle, description } = item;
-            return (
-              <li key={idx} className="flex flex-col gap-2">
-                <h3 className="text-base-m md:text-base-t xl:text-base-d">
-                  {itemTitle}
-                </h3>
-                <p className="label font-extralight">{description}</p>
-              </li>
-            );
-          })}
-        </ul> */}
-        <p>{call}</p>
+        <p className="w-[179px] max-md:mb-6 md:w-full self-end md:row-start-3 md:col-start-2 text-base-m font-extralight md:text-[13px]">
+          {call}
+        </p>
         <CareerForm />
       </div>
     </Section>

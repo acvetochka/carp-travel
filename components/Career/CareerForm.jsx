@@ -8,6 +8,7 @@ import FormInput from '../FormInput';
 import PhoneInput from './PhoneInput';
 import Textarea from '../Textarea';
 import SendButton from '../SendButton';
+import Checkbox from './Checkbox';
 
 const CareerForm = () => {
   const {
@@ -44,38 +45,46 @@ const CareerForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
-      <FormInput
-        label="Full name"
-        type="text"
-        name="name"
-        placeholder="John Smith"
-        register={register}
-        errors={errors}
-        textError={'Incorrect name'}
-      />
-      <FormInput
-        label="E-mail"
-        type="email"
-        name="email"
-        placeholder="johnsmith@email.com"
-        register={register}
-        errors={errors}
-        textError={'Invalid email'}
-      />
-      <FormInput
-        label="Position"
-        type="text"
-        name="position"
-        placeholder="Movie maker"
-        register={register}
-        errors={errors}
-        required="false"
-      />
+    <form
+      onSubmit={handleSubmit(onSubmit)}
+      className="md:col-start-2 md:col-span-2 md:row-start-4 md:row-span-2 md:grid md:grid-row-[256px_60px] md:gap-x-5 md:grid-cols-[221px_221px]"
+    >
+      <div className="md:col-start-1 md:row-start-1 flex flex-col gap-4 xl:gap-[26px] max-md:mb-4">
+        <FormInput
+          label="Full name"
+          type="text"
+          name="name"
+          placeholder="John Smith"
+          register={register}
+          errors={errors}
+          textError={'Incorrect name'}
+        />
+        <FormInput
+          label="E-mail"
+          type="email"
+          name="email"
+          placeholder="johnsmith@email.com"
+          register={register}
+          errors={errors}
+          textError={'Invalid email'}
+        />
+        <FormInput
+          label="Position"
+          type="text"
+          name="position"
+          placeholder="Movie maker"
+          register={register}
+          errors={errors}
+          required="false"
+        />
 
-      <PhoneInput name="phone" errors={errors} register={register} />
-      <Textarea />
-      <SendButton />
+        <PhoneInput name="phone" errors={errors} register={register} />
+      </div>
+      <Textarea className="md:col-start-2 md:row-start-1" />
+      <Checkbox className="md:col-start-1 md:row-start-2" />
+      <div className="flex justify-end md:col-start-2 md:row-start-2 self-start">
+        <SendButton />
+      </div>
     </form>
   );
 };
