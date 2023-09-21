@@ -1,0 +1,25 @@
+{
+  "title": "Choose",
+  "titleAccent": "Us",
+  "span": "Why us?",
+  "advantages": [
+    {
+      "itemTitle": "Professional development",
+      "description": "We offer growth opportunities and a creative environment to nurture your talents."
+    },
+    {
+      "itemTitle": "Teamwork",
+      "description": "Join our close-knit family, where support and inspiration abound."
+    },
+    {
+      "itemTitle": "Stimulating work environment",
+      "description": "JFlexibility and remote options for a comfortable experience."
+    },
+    {
+      "itemTitle": "Exciting challenges",
+      "description": "Unleash your potential through unforgettable projects showcasing Carpathian beauty."
+    }
+  ],
+  "call": "Don't miss your opportunity! Fill out the form right now and join our team!",
+  "offer": "Your chance to join our passionate team in Carpathian tourism. Seeking talented professionals to share our common mission. "
+}
