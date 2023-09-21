@@ -23,7 +23,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         isOpen
           ? 'translate-y-0 opacity-1 visible overflow-y-scroll'
           : '-translate-y-full opacity-0 invisible pointer-events-none'
-      } transition-all duration-300 ease-in-out`}
+      } transition-all duration-500 ease-in-out`}
     >
       <div className="container w-full relative flex justify-center items-center h-screen">
         <ul className="p-8 flex flex-col gap-12 items-center">

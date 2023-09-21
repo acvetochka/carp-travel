@@ -1,20 +1,42 @@
 'use client';
 
 import { useForm } from 'react-hook-form';
+import useFormPersist from 'react-hook-form-persist';
+import Notiflix from 'notiflix';
+
 import FormInput from '../FormInput';
+import SendButton from '../SendButton';
+import Textarea from '../Textarea';
 
 const Form = () => {
   const {
     register,
     handleSubmit,
+    watch,
+    setValue,
     formState: { errors },
-  } = useForm();
+  } = useForm({
+    mode: 'onTouched',
+    defaultValues: {
+      name: '',
+      email: '',
+    },
+  });
+
+  useFormPersist('form', {
+    watch,
+    setValue,
+    include: ['name', 'email'],
+  });
 
   const onSubmit = data => {
-    if (errors) {
-      console.log(errors);
+    if (!data.email || !data.name) {
+      Notiflix.Notify.failure('Fill in the required fields');
+    } else {
+      setValue('name', '');
+      setValue('email', '');
+      Notiflix.Notify.success('Message sent successfully');
     }
-    console.log(data);
   };
 
   const reset = () => {};
@@ -45,19 +67,8 @@ const Form = () => {
         />
       </div>
       <div className="flex-1 flex w-full flex-col">
-        <label className="flex flex-col text-label font-extralight mb-4">
-          Message
-          <textarea
-            name="message"
-            className="resize-none placeholder:text-[13px] bg-white/5 focus:bg-white/10  border-none h-[196px] md:h-[221px] xl:h-[174px]"
-          ></textarea>
-        </label>
-        <button
-          type="submit"
-          className="text-xl-m uppercase text-right self-end"
-        >
-          Send
-        </button>
+        <Textarea />
+        <SendButton />
       </div>
     </form>
   );

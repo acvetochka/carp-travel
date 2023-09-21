@@ -1,6 +1,6 @@
 import Section from '../Section';
-import about from '../../data/about';
 import Title from '../Title';
+import about from '../../data/about';
 
 const About = () => {
   const { title, titleAccent, description, losung } = about;
