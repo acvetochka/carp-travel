@@ -21,15 +21,23 @@ This repository contains the following main directories and files:
 
 - **Responsive Design**: The Carp Travel website utilizes responsive design, which means it's optimized for display on various devices and screens, including computers, tablets, and smartphones.
 
-![Mobile](https://carp-travel-xi.vercel.app/_next/image?url=%2Freadme%2Fmobile.jpg)
+<!-- ![Mobile](https://carp-travel-xi.vercel.app/_next/image?url=/readme/mobile.jpg) -->
 
-![Tablet](https://carp-travel-xi.vercel.app/_next/image?url=%2Freadme%2Ftablet.jpg)
+![Mobile](public/readme/mobile.jpg)
 
-![Desktop](https://carp-travel-xi.vercel.app/_next/image?url=%2Freadme%2Fdesktop-readme.jpg)
+![Tablet](public/readme/tablet.jpg)
+
+![Desktop](public/readme//desktop-readme.jpg)
+
+<!-- ![Tablet](https://carp-travel-xi.vercel.app/_next/image?url=/readme/tablet.jpg)
+
+![Desktop](https://carp-travel-xi.vercel.app/_next/image?url=/readme/desktop-readme.jpg) -->
 
 - **Swiper Integration**: We have incorporated the Swiper library to provide an interactive slider experience on our website. You can now effortlessly swipe through content, such as images or featured items, with ease.
 
-![Tablet](https://carp-travel-xi.vercel.app/_next/image?url=%2Freadme%2Fslides.gif)
+<!-- ![Tablet](https://carp-travel-xi.vercel.app/_next/image?url=/readme/slides.gif) -->
+
+![SwiperSlides](public/readme/slides.gif)
 
 
 <!-- &w=384&q=75 -->
