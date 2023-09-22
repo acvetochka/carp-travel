@@ -21,13 +21,14 @@ This repository contains the following main directories and files:
 
 - **Responsive Design**: The Carp Travel website utilizes responsive design, which means it's optimized for display on various devices and screens, including computers, tablets, and smartphones.
 
+![Adaptive](public/readme/collage.jpg)
 <!-- ![Mobile](https://carp-travel-xi.vercel.app/_next/image?url=/readme/mobile.jpg) -->
 
-![Mobile](public/readme/mobile.jpg)
+<!-- ![Mobile](public/readme/mobile.jpg)
 
 ![Tablet](public/readme/tablet.jpg)
 
-![Desktop](public/readme//desktop-readme.jpg)
+![Desktop](public/readme//desktop-readme.jpg) -->
 
 <!-- ![Tablet](https://carp-travel-xi.vercel.app/_next/image?url=/readme/tablet.jpg)
 
