@@ -19,7 +19,6 @@ const Services = () => {
     if (swiper) {
       swiper.on('slideChange', () => {
         setActiveSlide(swiper.realIndex);
-        // console.log(swiper);
       });
     }
   }, [swiper]);
@@ -47,7 +46,7 @@ const Services = () => {
           modules={[EffectFade]}
           slidesPerView={1}
         >
-          {services.map((item, idx) => {
+          {services.map(item => {
             const { id, bg } = item;
             return (
               <div key={id} className="bg-black">

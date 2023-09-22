@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Textarea = ({ customStyle }) => {
   return (
     <label className="flex flex-col text-label font-extralight mb-4">
@@ -10,6 +12,8 @@ const Textarea = ({ customStyle }) => {
   );
 };
 
-export default Textarea;
+Textarea.propTypes = {
+  customStyle: PropTypes.string,
+};
 
-//
+export default Textarea;

@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const HeroLosung = ({ losung }) => {
   return (
     <div className="flex justify-end md:col-start-2">
@@ -12,6 +14,10 @@ const HeroLosung = ({ losung }) => {
       </div>
     </div>
   );
+};
+
+HeroLosung.propTypes = {
+  losung: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default HeroLosung;

@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import PropTypes from 'prop-types';
 
 import Title from '../Title';
 
@@ -35,6 +36,11 @@ const ServicesSlideInfo = ({ item, idx }) => {
       </p>
     </div>
   );
+};
+
+ServicesSlideInfo.propTypes = {
+  item: PropTypes.object.isRequired,
+  idx: PropTypes.number,
 };
 
 export default ServicesSlideInfo;

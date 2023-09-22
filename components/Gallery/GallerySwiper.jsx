@@ -1,14 +1,12 @@
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { EffectCoverflow, Navigation, Keyboard } from 'swiper/modules';
 import Image from 'next/image';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { EffectCoverflow, Navigation } from 'swiper/modules';
 
-import gallery from '../../data/gallery';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
-import { useEffect, useRef } from 'react';
-// import styles from '../styles/swiper.module.css';
+import gallery from '../../data/gallery';
 
 const initialSlideIndex = 1;
 
@@ -18,26 +16,10 @@ const swiperGallery = [
 ];
 
 const GallerySwiper = () => {
-  // let swiperInstance;
-
-  // const handleSwiperInit = swiper => {
-  //   swiperInstance = swiper;
-  //   const nextButton = swiper.navigation.nextEl;
-  //   const prevButton = swiper.navigation.prevEl;
-  //   if (nextButton) {
-  //     nextButton.setAttribute('tabindex', '0');
-  //   }
-  //   if (prevButton) {
-  //     prevButton.setAttribute('tabindex', '0');
-  //   }
-  // };
-
   return (
     <div className="max-md:hidden">
       <Swiper
-        // ref={swiperRef}
         effect={'coverflow'}
-        // speed={1500}
         initialSlide={initialSlideIndex}
         hashNavigation={true}
         navigation={true}
@@ -47,16 +29,12 @@ const GallerySwiper = () => {
         spaceBetween={24}
         coverflowEffect={{
           rotate: 0,
-          // stretch: -50,
           scale: 1,
-          // depth: 200,
           modifier: 1,
           slideShadows: true,
         }}
         loop={true}
-        // keyboard={{ enabled: true, onlyInViewport: false }}
         modules={[EffectCoverflow, Navigation]}
-        // onSwiper={handleSwiperInit}
         className="w-full mx-[-24px] mySwiper max-md:hidden"
       >
         {swiperGallery.map(({ id, src, alt }) => (
@@ -70,20 +48,6 @@ const GallerySwiper = () => {
             />
           </SwiperSlide>
         ))}
-        {/* <button
-        className="swiper-button-prev focus:outline-none focus:ring focus:border-blue-300"
-        ref={prevButtonRef}
-        tabIndex="0"
-      >
-        Prev
-      </button>
-      <button
-        className="swiper-button-next focus:outline-none focus:ring focus:border-blue-300"
-        ref={nextButtonRef}
-        tabIndex="0"
-      >
-        Next
-      </button> */}
       </Swiper>
     </div>
   );

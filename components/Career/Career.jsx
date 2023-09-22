@@ -1,6 +1,7 @@
+import career from '../../data/career';
+
 import Section from '../Section';
 import Title from '../Title';
-import career from '../../data/career';
 import CareerAdvantages from './CareerAdvantages';
 import CareerForm from './CareerForm';
 

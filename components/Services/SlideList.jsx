@@ -1,5 +1,6 @@
 'use client';
 
+import PropTypes from 'prop-types';
 import { TbDiamondsFilled } from 'react-icons/tb';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
@@ -45,6 +46,11 @@ const SlideList = ({ activeSlide, onMenuButtonClick }) => {
       </div>
     </div>
   );
+};
+
+SlideList.propTypes = {
+  activeSlide: PropTypes.number.isRequired,
+  onMenuButtonClick: PropTypes.func.isRequired,
 };
 
 export default SlideList;

@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
 
 const pattern = {
@@ -42,5 +43,17 @@ const FormInput = ({
     )}
   </div>
 );
+
+FormInput.propTypes = {
+  label: PropTypes.string.isRequired,
+  type: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  placeholder: PropTypes.string.isRequired,
+  register: PropTypes.func.isRequired,
+  errors: PropTypes.object,
+  textError: PropTypes.string,
+  className: PropTypes.string,
+  required: PropTypes.string,
+};
 
 export default FormInput;

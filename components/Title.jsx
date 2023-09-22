@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Title = ({ title, accent, className = '' }) => {
   return (
     <h2
@@ -6,6 +8,12 @@ const Title = ({ title, accent, className = '' }) => {
       {title} <span className="font-medium">{accent}</span>
     </h2>
   );
+};
+
+Title.propTypes = {
+  title: PropTypes.string.isRequired,
+  accent: PropTypes.string.isRequired,
+  className: PropTypes.string,
 };
 
 export default Title;

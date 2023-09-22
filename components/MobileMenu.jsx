@@ -1,7 +1,8 @@
 import Link from 'next/link';
+import { useEffect } from 'react';
+import PropTypes from 'prop-types';
 
 import menu from '../data/menu';
-import { useEffect } from 'react';
 
 const menuArr = menu.map(item => ({ ...item, src: `#${item.src}` }));
 
@@ -46,5 +47,11 @@ const MobileMenu = ({ isOpen, onClose }) => {
     </div>
   );
 };
+
+MobileMenu.propTypes = {
+  isOpen: PropTypes.bool.isRequired,
+  onClose: PropTypes.func.isRequired,
+};
+
 
 export default MobileMenu;

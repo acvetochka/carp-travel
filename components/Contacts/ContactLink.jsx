@@ -1,5 +1,5 @@
-// const { default: Link } = require("next/link");
 import Link from 'next/link';
+import PropTypes from 'prop-types';
 
 const ContactLink = ({ href, text }) => {
   return (
@@ -11,6 +11,11 @@ const ContactLink = ({ href, text }) => {
       {text}
     </Link>
   );
+};
+
+ContactLink.propTypes = {
+  href: PropTypes.string.isRequired,
+  text: PropTypes.string.isRequired,
 };
 
 export default ContactLink;

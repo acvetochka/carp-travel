@@ -1,4 +1,5 @@
 import InputMask from 'react-input-mask';
+import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
 
 function PhoneInput({ register, errors, name }) {
@@ -46,5 +47,11 @@ function PhoneInput({ register, errors, name }) {
     </div>
   );
 }
+
+PhoneInput.propTypes = {
+  register: PropTypes.func.isRequired,
+  errors: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+};
 
 export default PhoneInput;

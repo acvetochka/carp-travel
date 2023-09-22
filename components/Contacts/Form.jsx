@@ -39,8 +39,6 @@ const Form = () => {
     }
   };
 
-  const reset = () => {};
-
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}

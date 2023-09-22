@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 const Section = ({ id = 'null', children, className }) => {
   return (
     <section
@@ -8,6 +10,12 @@ const Section = ({ id = 'null', children, className }) => {
       {children}
     </section>
   );
+};
+
+Section.propTypes = {
+  id: PropTypes.string,
+  children: PropTypes.node,
+  className: PropTypes.string,
 };
 
 export default Section;
