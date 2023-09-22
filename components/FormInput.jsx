@@ -18,7 +18,7 @@ const FormInput = ({
 }) => (
   <div className="w-full relative">
     <label
-      className={`flex flex-col text-label font-extralight ${
+      className={`flex flex-col text-label font-extralight xl:mb-1 ${
         errors[name] && 'text-red-500'
       }`}
     >

@@ -67,7 +67,7 @@ const Form = () => {
         />
       </div>
       <div className="flex-1 flex w-full flex-col">
-        <Textarea />
+        <Textarea customStyle="h-[196px] md:h-[221px] xl:h-[174px]" />
         <SendButton />
       </div>
     </form>

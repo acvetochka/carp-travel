@@ -12,7 +12,7 @@ const Navbar = () => {
       {menu.map(({ id, src, text }, idx) => (
         <li key={id}>
           <Link
-            className="text-[14px] tracking-[1.4px] hover:cursor-pointer hover:underline transition-[text-decoration] duration-1000"
+            className="text-[14px] tracking-[1.4px] no-underline hover:cursor-pointer hover:underline transition duration-1000 ease-in-out link"
             to={src}
             spy={true}
             smooth={true}

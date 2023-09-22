@@ -47,7 +47,7 @@ const CareerForm = () => {
   return (
     <form
       onSubmit={handleSubmit(onSubmit)}
-      className="md:col-start-2 md:col-span-2 md:row-start-4 md:row-span-2 md:grid md:grid-row-[256px_60px] md:gap-x-5 md:grid-cols-[221px_221px]"
+      className="md:col-start-2 md:col-span-2 md:row-start-4 md:row-span-2 md:grid md:grid-row-[265px_53px] md:gap-x-5 md:grid-cols-[221px_221px] xl:col-start-3 xl:row-start-3 xl:grid-cols-[290px_290px] xl:gap-x-6"
     >
       <div className="md:col-start-1 md:row-start-1 flex flex-col gap-4 xl:gap-[26px] max-md:mb-4">
         <FormInput
@@ -80,7 +80,10 @@ const CareerForm = () => {
 
         <PhoneInput name="phone" errors={errors} register={register} />
       </div>
-      <Textarea className="md:col-start-2 md:row-start-1" />
+      <Textarea
+        className="md:col-start-2 md:row-start-1"
+        customStyle="h-full xl:h-[268px]"
+      />
       <Checkbox className="md:col-start-1 md:row-start-2" />
       <div className="flex justify-end md:col-start-2 md:row-start-2 self-start">
         <SendButton />
