@@ -14,7 +14,9 @@ const ContactBlock = () => {
         <div className="flex gap-5 w-full justify-end">
           <ul className="text-[14px] leading-6 flex-1 text-right flex flex-col">
             {tel.map(({ id, href, text }) => (
-              <ContactLink key={id} href={href} text={text} />
+              <li key={id}>
+                <ContactLink href={href} text={text} />
+              </li>
             ))}
           </ul>
           <ContactLabel text="Phone number" className="w-[32%]" />

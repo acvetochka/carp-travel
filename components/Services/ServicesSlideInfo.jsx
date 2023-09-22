@@ -26,7 +26,9 @@ const ServicesSlideInfo = ({ item, idx }) => {
       <div
         className={`row-start-4 text-label font-extralight text-right mb-6 md:row-start-3 md:col-start-2 md:text-left xl:row-start-2 xl:col-start-3 mt-[-5px] losung`}
         style={{
-          paddingTop: `${idx <= 2 ? `${idx * 40}px` : `${idx * 40 + 24}px`}`,
+          paddingTop: `${
+            idx <= 2 ? `${Number(idx) * 40}px` : `${Number(idx) * 40 + 24}px`
+          }`,
         }}
       >
         <p>{losung}</p>
