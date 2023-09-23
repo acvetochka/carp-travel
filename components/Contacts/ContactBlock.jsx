@@ -1,4 +1,4 @@
-const { default: Link } = require('next/link');
+import Link from 'next/link';
 
 import contacts from '../../data/contacts';
 import ContactLabel from './ContactLabel';

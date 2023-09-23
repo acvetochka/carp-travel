@@ -1,4 +1,4 @@
-const { Link } = require('react-scroll');
+import { Link } from 'react-scroll';
 import styles from '../../styles/button.module.css';
 
 const HeroButton = () => {

@@ -24,7 +24,7 @@ body {
   
 .hero-bg {
   background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
-    url('/hero-bg.png');
+    url('/hero-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
     background-position: center;
@@ -32,7 +32,7 @@ body {
 
 .career-bg {
   background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
-    url('/career-bg.png');
+    url('/career-bg.jpg');
   background-repeat: repeat-y;
   background-position: center top;
 }
@@ -45,7 +45,7 @@ body {
 }
 .about-bg {
   background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(0, 37, 49, 0.00) 100%),
-    url('/about-bg.png');
+    url('/about-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
     /* background-position: center; */
@@ -55,14 +55,14 @@ body {
   .gallery-bg {
     background-color: #001826;
     background-image: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.85) 100%, rgba(0, 37, 49, 0.00) 100%),
-      url('/gallery-bg.png');
+      url('/gallery-bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
   }
   
   .contact-bg {
     background: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.75) 100%, rgba(0, 37, 49, 0.00) 100%), url('/contact-bg.png'),
-      url('/contact-bg.png');
+      url('/contacts-bg.jpg');
     height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
