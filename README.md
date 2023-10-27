@@ -9,16 +9,16 @@ This website is created for outdoor enthusiasts and nature lovers.
 ## Technologies Used
 
 The Carp Travel project was built using the following technologies:
+  
+  ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) : The front-end of the website was developed using React.js, a popular JavaScript library for building user interfaces.
 
-- **React**: The front-end of the website was developed using React.js, a popular JavaScript library for building user interfaces.
+  ![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) : I used Next.js, a React framework, to improve server-side rendering and optimize the website's performance.
+ 
+  ![Swiper](https://img.shields.io/badge/Swiper-gray?style=for-the-badge&logo=swiper&logoColor=0070e4) : Swiper was used for creating responsive and interactive carousels and sliders on the site.
 
-- **Next.js**: We used Next.js, a React framework, to improve server-side rendering and optimize the website's performance.
+  ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white) : A utility-first CSS framework used for styling and layout.
 
-- **Swiper**: Swiper was used for creating responsive and interactive carousels and sliders on the site.
-
-- **Tailwind CSS**: A utility-first CSS framework used for styling and layout.
-
-- **Vercel**: The website is deployed on Vercel, a cloud platform for hosting web applications.
+  ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) : The website is deployed on Vercel, a cloud platform for hosting web applications.
 
 - **Other Dependencies**: Various other libraries and dependencies were used to implement specific features and functionality.
 
@@ -42,8 +42,3 @@ This repository contains the following main directories and files:
 - **Swiper Integration**: We have incorporated the Swiper library to provide an interactive slider experience on our website. You can now effortlessly swipe through content, such as images or featured items, with ease.
 
 ![SwiperSlides](public/readme/slides.gif)
-
-
-- **Installation**
-
-npm run dev
