@@ -24,7 +24,7 @@ const SlideList = ({ activeSlide, onMenuButtonClick }) => {
               className={`flex items-center uppercase text-lg-m md:text-lg-t xl:text-lg-d font-extralight cursor-pointer ${
                 idx === activeSlide
                   ? 'opacity-100 font-medium'
-                  : ' opacity-50 hover:pl-1 hover:opacity-100'
+                  : ' opacity-50 hover:pl-1 hover:opacity-100 transition-all duration-500 easy-in-out'
               }`}
             >
               <button
