@@ -30,7 +30,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         <ul className="p-8 flex flex-col gap-12 items-center">
           {menuArr.map(({ id, src, text }) => (
             <li key={id}>
-              <Link href={src} onClick={onClose}>
+              <Link href={src} onClick={onClose} class="link">
                 {text}
               </Link>
             </li>
@@ -38,7 +38,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         </ul>
         <button
           type="button"
-          className="absolute top-11 right-5 uppercase"
+          className="absolute top-11 right-5 uppercase hover:tracking-[1.26px] transition-font duration-300 easy-in-out"
           onClick={onClose}
         >
           Close

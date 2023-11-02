@@ -6,7 +6,7 @@ const ContactLink = ({ href, text }) => {
     <Link
       href={href}
       target="_parent"
-      className="text-[14px] leading-6 hover:underline md:text-[16px] xl:text-[18px]"
+      className="text-[14px] leading-6 md:text-[16px] xl:text-[18px] link"
     >
       {text}
     </Link>

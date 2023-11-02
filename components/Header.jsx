@@ -36,7 +36,7 @@ const Header = () => {
           </Link>
           <button
             type="button"
-            className="block md:hidden uppercase"
+            className="block md:hidden uppercase hover:tracking-[1.26px] transition-font duration-300 easy-in-out"
             onClick={openMobileMenu}
           >
             Menu

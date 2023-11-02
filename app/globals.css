@@ -77,12 +77,32 @@ body {
   
 .link {
   text-decoration: none;
-  transition: text-decoration 1000ms cubic-bezier(0.075, 0.82, 0.165, 1);
-}
+  /* transition: all 1000ms cubic-bezier(0.075, 0.82, 0.165, 1); */
+    position: relative;
+    /* font-size: 18px; */
+    /* color: var(--accent-color); */
+    /* transition: color 250ms ease-in-out,
+              text-decoration 250ms ease-in-out; */
+  }
+  
+  .link:after {
+    content: '';
+    /* background: none repeat scroll 0 0 white; */
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    height: 1.5px;
+    background-color: white;
+    display: block;
+    transition: width 0.3s ease;
+  
+    width: 0;
+  }
 
-.link:hover {
-  text-decoration: underline;
-}
+                .link:hover:after {
+                  width: 100%;
+                }
+
   .mySwiper.swiper-3d {
     perspective: none;
     align-items: center;
