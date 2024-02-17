@@ -42,3 +42,34 @@ This repository contains the following main directories and files:
 - **Swiper Integration**: We have incorporated the Swiper library to provide an interactive slider experience on our website. You can now effortlessly swipe through content, such as images or featured items, with ease.
 
 ![SwiperSlides](public/readme/slides.gif)
+
+- **Components API**:
+
+Each component has its own API. You can find it in the component's folder. This
+is a list of more common components and their API.
+
+This is example of API for component `Title` and `Paragraph`
+
+- ### Title
+
+| Prop        | Default     | Description                                   |
+| ----------- | ----------- | --------------------------------------------- |
+| `title   `  | `undefined` | required, string, any text content            |
+| `accent`    | `undefined` | required, string, any text content            |
+| `className` | " "         | add custom or additional css class you'd need |
+
+
+- ### FormInput
+
+| Prop         | Default     | Desscription                                  |
+| ------------ | ----------- | --------------------------------------------- |
+| `label`      | `undefined` | required, string, any text content            |
+| `type`       | `undefined` | required, `text`, `email`                     |
+| `name`       | `undefined` | required, string, any text content            |
+| `placeholder`| `undefined` | required, string, any text content            | 
+| `register`   | `undefined` | required, function                            |
+| `errors`     |             | object                                        |
+| `textError`  | `null`      | string                                        |
+| `className`  | " "         | add custom or additional css class you'd need |
+| `required`   | `true`      | boolean                                       |
+
