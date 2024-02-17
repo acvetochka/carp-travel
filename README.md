@@ -73,3 +73,8 @@ This is example of API for component `Title` and `Paragraph`
 | `className`  | " "         | add custom or additional css class you'd need |
 | `required`   | `true`      | boolean                                       |
 
+ - ### Textarea
+
+| Prop         | Default     | Desscription                                  |
+| ------------ | ----------- | --------------------------------------------- |
+| `customStyle`| `undefined` | add custom or additional styles you'd need    |
