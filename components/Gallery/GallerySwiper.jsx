@@ -41,8 +41,8 @@ const GallerySwiper = () => {
         {swiperGallery.map(({ id, src, alt }) => (
           <SwiperSlide key={id} className="customSlide">
              <motion.div
-                initial={{ rotate: 0 }}
-                animate={{ rotate: 360 }}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
                 key={id}
               >
             <Image
