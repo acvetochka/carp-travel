@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
+import {motion} from 'framer-motion';
 
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
@@ -39,6 +40,11 @@ const GallerySwiper = () => {
       >
         {swiperGallery.map(({ id, src, alt }) => (
           <SwiperSlide key={id} className="customSlide">
+             <motion.div
+                initial={{ rotate: 0 }}
+                animate={{ rotate: 360 }}
+                key={id}
+              >
             <Image
               src={src}
               alt={alt}
@@ -46,6 +52,7 @@ const GallerySwiper = () => {
               height={429}
               className="w-full"
             />
+            </motion.div>
           </SwiperSlide>
         ))}
       </Swiper>
