@@ -6,6 +6,22 @@ This is the repository for the Carp Travel website, which is hosted on Vercel. Y
 
 This website is created for outdoor enthusiasts and nature lovers.
 
+## 📁 Project Structure
+
+```plaintext
+
+ 📦 carp-travel
+ ┣ 📂 public            # Static assets (images)
+ ┣ 📂 app               # Next.js App Router (root of the application)
+     ┣ 📜 globals.css   # global styles
+     ┣ 📜 page.tsx      # Main page component (homepage)
+     ┗ 📜 layout.tsx    # Root layout component (wrapping all pages)
+ ┣ 📂 components        # Reusable UI components
+ ┣ 📂 data              # Static/local data (e.g., JSON)
+ ┣ 📂 styles            # Shared styles
+ ┗ 📜 README.md         # Project documentation
+```
+
 ## Technologies Used
 
 The Carp Travel project was built using the following technologies:
