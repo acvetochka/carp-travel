@@ -14,7 +14,7 @@
     "eslint": "8.48.0",
     "eslint-config-next": "13.4.19",
     "framer-motion": "^11.0.5",
-    "next": "13.4.19",
+    "next": "^14.2.3",
     "notiflix": "^3.2.6",
     "prop-types": "^15.8.1",
     "react": "18.2.0",

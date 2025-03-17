@@ -34,14 +34,14 @@ const Header = () => {
               priority
             />
           </Link>
-          <button
+          {isMobile ? (<button
             type="button"
             className="block md:hidden uppercase hover:tracking-[1.26px] transition-font duration-300 easy-in-out"
             onClick={openMobileMenu}
           >
             Menu
-          </button>
-          <Navbar />
+          </button>):
+          (<Navbar />)}
         </div>
       </header>
       <MobileMenu isOpen={isMobileMenuOpen} onClose={closeMobileMenu} />
