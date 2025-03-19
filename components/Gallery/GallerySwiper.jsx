@@ -1,5 +1,7 @@
+"use client";
+
 import Image from 'next/image';
-// import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import {motion} from 'framer-motion';
 
@@ -10,8 +12,8 @@ import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
 import gallery from '../../data/gallery';
 
-const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), { ssr: false });
-const SwiperSlide = dynamic(() => import('swiper/react').then((mod) => mod.SwiperSlide), { ssr: false });
+// const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), { ssr: false });
+// const SwiperSlide = dynamic(() => import('swiper/react').then((mod) => mod.SwiperSlide), { ssr: false });
 
 const initialSlideIndex = 1;
 
