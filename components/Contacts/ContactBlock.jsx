@@ -1,11 +1,13 @@
 import Link from 'next/link';
 
-import contacts from '../../data/contacts';
-import ContactLabel from './ContactLabel';
-import ContactLink from './ContactLink';
-import social from '../../data/social';
+import contacts from '@/data/contacts';
+import social from '@/data/social';
+import { ContactLink } from './ContactLink';
+import { ContactLabel } from './ContactLabel';
+// import ContactLabel from './ContactLabel';
+// import ContactLink from './ContactLink';
 
-const ContactBlock = () => {
+export const ContactBlock = () => {
   const { tel, mail } = contacts;
 
   return (
@@ -46,5 +48,3 @@ const ContactBlock = () => {
     </div>
   );
 };
-
-export default ContactBlock;

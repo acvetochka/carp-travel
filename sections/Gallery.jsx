@@ -1,11 +1,13 @@
 'use client';
 
-import GalleryList from './GalleryList';
-import Title from '../Title';
-import GallerySwiper from './GallerySwiper';
-import Section from '../Section';
+import { GalleryList, GallerySwiper, Section, Title } from "@/components";
 
-const Gallery = () => {
+// import GalleryList from '../components/Gallery/GalleryList';
+// import Title from '../components/Title';
+// import GallerySwiper from '../components/Gallery/GallerySwiper';
+// import Section from '../components/Section';
+
+export const Gallery = () => {
   return (
     <Section id="gallery" className="gallery-bg">
       <div className="container md:text-center xl:text-start">
@@ -19,4 +21,3 @@ const Gallery = () => {
   );
 };
 
-export default Gallery;

@@ -1,6 +1,6 @@
-import career from '../../data/career';
+import career from '@/data/career';
 
-const Checkbox = () => {
+export const Checkbox = () => {
   return (
     <div className="flex gap-2  max-md:mb-4">
       <input
@@ -15,5 +15,3 @@ const Checkbox = () => {
       
   );
 };
-
-export default Checkbox;

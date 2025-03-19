@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const HeroLosung = ({ losung }) => {
+export const HeroLosung = ({ losung }) => {
   return (
     <div className="flex justify-end md:col-start-2">
       <div className="relative self-start right-[-9.48px]  md:right-[-25.9px] xl:right-[-36.48px]">
@@ -20,4 +20,3 @@ HeroLosung.propTypes = {
   losung: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
-export default HeroLosung;

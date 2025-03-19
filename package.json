@@ -22,11 +22,11 @@
     "react-hook-form": "^7.46.1",
     "react-hook-form-persist": "^3.0.0",
     "react-icons": "^4.11.0",
-    "react-input-mask": "^2.0.4",
+    "react-input-mask": "^3.0.0-alpha.2",
     "react-responsive": "^9.0.2",
-    "react-scroll": "^1.8.9",
+    "react-scroll": "^1.9.3",
     "smooth-scroll": "^16.1.3",
-    "swiper": "^10.2.0"
+    "swiper": "^11.2.6"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.6",

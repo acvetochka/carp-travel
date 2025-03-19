@@ -1,9 +1,10 @@
 import Image from 'next/image';
 import PropTypes from 'prop-types';
+import { Title } from '../Title';
 
-import Title from '../Title';
+// import Title from '../Title';
 
-const ServicesSlideInfo = ({ item, idx }) => {
+export const ServicesSlideInfo = ({ item, idx }) => {
   const { id, img, losung, title, description } = item;
   return (
     <div className="container grid grid-rows-[68px_52px_214px_36px_166px_142px] gap-y-3  md:grid-cols-[463px_221px] md:grid-rows-[80px_167px_24px_120px] md:gap-x-5 md:gap-y-8 xl:grid-cols-[607px_292px_293px] xl:grid-rows-[137px_261px_168px] xl:gap-y-0">
@@ -45,4 +46,3 @@ ServicesSlideInfo.propTypes = {
   idx: PropTypes.number,
 };
 
-export default ServicesSlideInfo;

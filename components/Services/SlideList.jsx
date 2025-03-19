@@ -13,7 +13,7 @@ const menuSlider = [
   'Rafting',
 ];
 
-const SlideList = ({ activeSlide, onMenuButtonClick }) => {
+export const SlideList = ({ activeSlide, onMenuButtonClick }) => {
   return (
     <div className="absolute w-full py-[54px] md:py-[64px] xl:py-[104px]">
       <div className="container grid grid-rows-[394px_166px_130px] gap-y-6 md:grid-cols-[463px_221px] md:grid-rows-[80px_167px_24px_120px] md:gap-x-5 md:gap-y-8 xl:grid-cols-[607px_292px_293px] xl:grid-rows-[137px_261px_168px] xl:gap-y-0">
@@ -53,4 +53,3 @@ SlideList.propTypes = {
   onMenuButtonClick: PropTypes.func.isRequired,
 };
 
-export default SlideList;

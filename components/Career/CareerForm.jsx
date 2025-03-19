@@ -3,14 +3,13 @@
 import { useForm } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import Notiflix from 'notiflix';
+import { FormInput } from '../FormInput';
+import { PhoneInput } from './PhoneInput';
+import { Textarea } from '../Textarea';
+import { Checkbox } from './Checkbox';
+import { SendButton } from '../SendButton';
 
-import FormInput from '../FormInput';
-import PhoneInput from './PhoneInput';
-import Textarea from '../Textarea';
-import SendButton from '../SendButton';
-import Checkbox from './Checkbox';
-
-const CareerForm = () => {
+export const CareerForm = () => {
   const {
     register,
     handleSubmit,
@@ -91,5 +90,3 @@ const CareerForm = () => {
     </form>
   );
 };
-
-export default CareerForm;

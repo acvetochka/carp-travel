@@ -3,12 +3,15 @@
 import { useForm } from 'react-hook-form';
 import useFormPersist from 'react-hook-form-persist';
 import Notiflix from 'notiflix';
+import { FormInput } from '../FormInput';
+import { Textarea } from '../Textarea';
+import { SendButton } from '../SendButton';
 
-import FormInput from '../FormInput';
-import SendButton from '../SendButton';
-import Textarea from '../Textarea';
+// import FormInput from '../FormInput';
+// import SendButton from '../SendButton';
+// import Textarea from '../Textarea';
 
-const Form = () => {
+export const Form = () => {
   const {
     register,
     handleSubmit,
@@ -72,4 +75,3 @@ const Form = () => {
   );
 };
 
-export default Form;

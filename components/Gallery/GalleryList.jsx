@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import gallery from '../../data/gallery';
+import gallery from '@/data/gallery';
 
-const GalleryList = () => {
+export const GalleryList = () => {
   return (
     <ul className="flex flex-col gap-6 mx-auto justify-center md:hidden">
       {gallery.map(({ id, src, alt }) => (
@@ -20,4 +20,3 @@ const GalleryList = () => {
   );
 };
 
-export default GalleryList;

@@ -1,12 +1,14 @@
 'use client';
 
 import { Link } from 'react-scroll';
+// import dynamic from "next/dynamic";
+// const Link = dynamic(() => import("react-scroll/modules/components/Link"), { ssr: false });
 
-import menu from '../data/menu';
+import menu from '@/data/menu';
 
 const duration = 400;
 
-const Navbar = () => {
+export const Navbar = () => {
   return (
     <ul className="flex md:gap-6 xl:gap-14 max-md:hidden">
       {menu.map(({ id, src, text }, idx) => (
@@ -27,4 +29,3 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;

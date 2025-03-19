@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const CareerAdvantages = ({ advantages }) => {
+export const CareerAdvantages = ({ advantages }) => {
   return (
     <ul className="flex flex-col gap-4 w-[181px] self-start text-right md:col-start-1 md:row-start-3 md:row-span-3 md:gap-6 md:w-full max-md:mb-[112px] xl:col-end-3 ">
       {advantages.map((item, idx) => {
@@ -24,4 +24,3 @@ CareerAdvantages.propTypes = {
   advantages: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
-export default CareerAdvantages;

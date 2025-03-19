@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 
-const ContactLabel = ({ text, className }) => {
+export const ContactLabel = ({ text, className }) => {
   return <p className={`text-label font-extralight ${className}`}>{text}</p>;
 };
 
@@ -9,4 +9,3 @@ ContactLabel.propTypes = {
   className: PropTypes.string.isRequired,
 };
 
-export default ContactLabel;

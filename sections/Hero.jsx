@@ -1,11 +1,12 @@
 'use client';
 
-import text from '../../data/heroText.json';
-import Section from '../Section';
-import HeroLosung from './HeroLosung';
-import HeroButton from './HeroButton';
+import { HeroButton, HeroLosung, Section } from '@/components';
+import text from '@/data/heroText.json';
+// import Section from '../components/Section';
+// import HeroLosung from '../components/Hero/HeroLosung';
+// import HeroButton from '../components/Hero/HeroButton';
 
-const Hero = () => {
+export const Hero = () => {
   const { losung, titleAccent, title, cities, description } = text;
 
   return (
@@ -27,5 +28,3 @@ const Hero = () => {
     </Section>
   );
 };
-
-export default Hero;

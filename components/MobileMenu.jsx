@@ -1,12 +1,14 @@
+"use client";
+
 import Link from 'next/link';
 import { useEffect } from 'react';
 import PropTypes from 'prop-types';
 
-import menu from '../data/menu';
+import menu from '@/data/menu';
 
 const menuArr = menu.map(item => ({ ...item, src: `#${item.src}` }));
 
-const MobileMenu = ({ isOpen, onClose }) => {
+export const MobileMenu = ({ isOpen, onClose }) => {
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -30,7 +32,7 @@ const MobileMenu = ({ isOpen, onClose }) => {
         <ul className="p-8 flex flex-col gap-12 items-center">
           {menuArr.map(({ id, src, text }) => (
             <li key={id}>
-              <Link href={src} onClick={onClose} class="link">
+              <Link href={src} onClick={onClose} className="link">
                 {text}
               </Link>
             </li>
@@ -53,5 +55,3 @@ MobileMenu.propTypes = {
   onClose: PropTypes.func.isRequired,
 };
 
-
-export default MobileMenu;

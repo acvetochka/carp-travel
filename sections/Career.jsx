@@ -1,11 +1,12 @@
-import career from '../../data/career';
+import { CareerAdvantages, CareerForm, Section, Title } from '@/components';
+import career from '@/data/career';
 
-import Section from '../Section';
-import Title from '../Title';
-import CareerAdvantages from './CareerAdvantages';
-import CareerForm from './CareerForm';
+// import Section from '../components/Section';
+// import Title from '../components/Title';
+// import CareerAdvantages from '../components/Career/CareerAdvantages';
+// import CareerForm from '../components/Career/CareerForm';
 
-const Career = () => {
+export const Career = () => {
   const { title, titleAccent, span, advantages, call, offer } = career;
   return (
     <Section id="career" className="career-bg">
@@ -32,4 +33,3 @@ const Career = () => {
   );
 };
 
-export default Career;

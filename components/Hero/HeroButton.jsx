@@ -1,7 +1,11 @@
-import { Link } from 'react-scroll';
-import styles from '../../styles/button.module.css';
+"use client";
 
-const HeroButton = () => {
+import { Link } from 'react-scroll';
+import styles from '@/styles/button.module.css';
+// import dynamic from "next/dynamic";
+// const Link = dynamic(() => import("react-scroll/modules/components/Link"), { ssr: false });
+
+export const HeroButton = () => {
   return (
     <div className={`md:col-start-2 md:row-start-5 ${styles.button}`}>
       <div
@@ -22,4 +26,3 @@ const HeroButton = () => {
   );
 };
 
-export default HeroButton;

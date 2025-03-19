@@ -7,11 +7,12 @@ import { EffectFade } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
 
-import SlideList from './SlideList';
-import ServicesSlideInfo from './ServicesSlideInfo';
-import services from '../../data/services';
+// import SlideList from '../components/Services/SlideList';
+// import ServicesSlideInfo from '../components/Services/ServicesSlideInfo';
+import services from '@/data/services';
+import { ServicesSlideInfo, SlideList } from '@/components';
 
-const Services = () => {
+export const Services = () => {
   const [swiper, setSwiper] = useState(null);
   const [activeSlide, setActiveSlide] = useState(0);
 
@@ -69,4 +70,3 @@ const Services = () => {
   );
 };
 
-export default Services;

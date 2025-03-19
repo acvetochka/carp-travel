@@ -6,7 +6,7 @@ const pattern = {
   name: /^[A-Za-zА-Яа-яЁё\s]{5}/,
 };
 
-const FormInput = ({
+export const FormInput = ({
   label,
   type,
   name,
@@ -56,4 +56,3 @@ FormInput.propTypes = {
   required: PropTypes.string,
 };
 
-export default FormInput;

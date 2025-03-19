@@ -1,8 +1,12 @@
-import InputMask from 'react-input-mask';
+// import InputMask from 'react-input-mask';
 import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
+import dynamic from 'next/dynamic';
 
-function PhoneInput({ register, errors, name }) {
+const InputMask = dynamic(() => import('react-input-mask'), { ssr: false });
+
+
+export const PhoneInput = ({ register, errors, name }) => {
   const countryCode = '+ 38';
 
   return (
@@ -54,4 +58,3 @@ PhoneInput.propTypes = {
   name: PropTypes.string.isRequired,
 };
 
-export default PhoneInput;

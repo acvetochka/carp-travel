@@ -4,11 +4,12 @@ import React, { useState } from 'react';
 import { useMediaQuery } from 'react-responsive';
 import Image from 'next/image';
 import Link from 'next/link';
+import { MobileMenu, Navbar } from '@/components';
 
-import Navbar from './Navbar';
-import MobileMenu from './MobileMenu';
+// import Navbar from '../components/Navbar';
+// import MobileMenu from '../components/MobileMenu';
 
-const Header = () => {
+export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const isMobile = useMediaQuery({ maxWidth: 767 });
 
@@ -49,4 +50,3 @@ const Header = () => {
   );
 };
 
-export default Header;

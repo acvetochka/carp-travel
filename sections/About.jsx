@@ -1,8 +1,9 @@
-import Section from '../Section';
-import Title from '../Title';
-import about from '../../data/about';
+// import Section from '../Section';
+// import Title from '../Title';
+import { Section, Title } from '@/components';
+import about from '@/data/about';
 
-const About = () => {
+export const About = () => {
   const { title, titleAccent, description, losung } = about;
   return (
     <Section id="about" className="about-bg">
@@ -46,4 +47,3 @@ const About = () => {
   );
 };
 
-export default About;

@@ -1,13 +1,17 @@
 import Image from 'next/image';
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Navigation } from 'swiper/modules';
 import {motion} from 'framer-motion';
 
+import dynamic from 'next/dynamic';
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/navigation';
 import 'swiper/css/keyboard';
 import gallery from '../../data/gallery';
+
+const Swiper = dynamic(() => import('swiper/react').then((mod) => mod.Swiper), { ssr: false });
+const SwiperSlide = dynamic(() => import('swiper/react').then((mod) => mod.SwiperSlide), { ssr: false });
 
 const initialSlideIndex = 1;
 
@@ -16,7 +20,7 @@ const swiperGallery = [
   ...gallery.map(item => ({ ...item, id: item.id + gallery.length })),
 ];
 
-const GallerySwiper = () => {
+export const GallerySwiper = () => {
   return (
     <div className="max-md:hidden">
       <Swiper
@@ -60,4 +64,3 @@ const GallerySwiper = () => {
   );
 };
 
-export default GallerySwiper;
