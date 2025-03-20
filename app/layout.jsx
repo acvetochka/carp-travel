@@ -1,5 +1,5 @@
 import './../public/styles.css';
-import './globals.css';
+import '@/styles/globals.css';
 
 import { GoogleAnalytics } from '@next/third-parties/google';
 import { Inter } from 'next/font/google';
