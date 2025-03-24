@@ -2,8 +2,6 @@ import Image from 'next/image';
 import PropTypes from 'prop-types';
 import { Title } from '../Title';
 
-// import Title from '../Title';
-
 export const ServicesSlideInfo = ({ item, idx }) => {
   const { id, img, losung, title, description } = item;
   return (

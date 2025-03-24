@@ -4,14 +4,7 @@ import PropTypes from 'prop-types';
 import { TbDiamondsFilled } from 'react-icons/tb';
 import 'swiper/css';
 import 'swiper/css/effect-fade';
-
-const menuSlider = [
-  'ATVs Traveling',
-  'Rock climbing',
-  'Hot air ballooning',
-  'Skydiving',
-  'Rafting',
-];
+import menuSlider from "@/data/menuSlider";
 
 export const SlideList = ({ activeSlide, onMenuButtonClick }) => {
   return (

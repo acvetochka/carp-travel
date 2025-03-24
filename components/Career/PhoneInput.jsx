@@ -1,9 +1,8 @@
-// import InputMask from 'react-input-mask';
+"use client";
+
+import InputMask from 'react-input-mask';
 import PropTypes from 'prop-types';
 import { IoCloseOutline } from 'react-icons/io5';
-import dynamic from 'next/dynamic';
-
-const InputMask = dynamic(() => import('react-input-mask'), { ssr: false });
 
 
 export const PhoneInput = ({ register, errors, name }) => {
@@ -24,7 +23,7 @@ export const PhoneInput = ({ register, errors, name }) => {
       </label>
       <InputMask
         mask="(999) 99 99 999"
-        maskChar="_"
+        maskPlaceholder="_"
         type="tel"
         id="phone"
         name="phone"
@@ -38,7 +37,6 @@ export const PhoneInput = ({ register, errors, name }) => {
             message: 'Invalid phone number format',
           },
         })}
-        // errors={errors}
         className={`form-input w-full pl-10 placeholder:text-[13px] placeholder:text-white/20  bg-white/5 focus:bg-white/10 border-none font-extralight md:h-6 xl:h-7 text-[13px] 
         ${errors[name] ? 'border-[#FF5757] text-[#FF5757]' : 'border-none'}
         `}

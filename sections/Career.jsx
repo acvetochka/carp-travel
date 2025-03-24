@@ -1,11 +1,6 @@
 import { CareerAdvantages, CareerForm, Section, Title } from '@/components';
 import career from '@/data/career';
 
-// import Section from '../components/Section';
-// import Title from '../components/Title';
-// import CareerAdvantages from '../components/Career/CareerAdvantages';
-// import CareerForm from '../components/Career/CareerForm';
-
 export const Career = () => {
   const { title, titleAccent, span, advantages, call, offer } = career;
   return (

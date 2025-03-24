@@ -4,8 +4,6 @@ import contacts from '@/data/contacts';
 import social from '@/data/social';
 import { ContactLink } from './ContactLink';
 import { ContactLabel } from './ContactLabel';
-// import ContactLabel from './ContactLabel';
-// import ContactLink from './ContactLink';
 
 export const ContactBlock = () => {
   const { tel, mail } = contacts;

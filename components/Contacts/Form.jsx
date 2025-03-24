@@ -7,10 +7,6 @@ import { FormInput } from '../FormInput';
 import { Textarea } from '../Textarea';
 import { SendButton } from '../SendButton';
 
-// import FormInput from '../FormInput';
-// import SendButton from '../SendButton';
-// import Textarea from '../Textarea';
-
 export const Form = () => {
   const {
     register,

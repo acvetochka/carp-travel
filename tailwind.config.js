@@ -14,6 +14,7 @@ module.exports = {
       // => @media (min-width: 1024px) { ... }
 
       xl: '1280px',
+      smOnly: { max: '767.98px' },
       // => @media (min-width: 1280px) { ... }
     },
     container: {
@@ -52,7 +53,19 @@ module.exports = {
     //   "write-o2": "rgba(255, 255, 255, 1)",
     //   red: "#FF5757",
     // },
-    extend: {},
+    extend: {
+      screens: {
+        sm: '320px',
+        // => @media (min-width: 640px) { ... }
+  
+        md: '768px',
+        // => @media (min-width: 1024px) { ... }
+  
+        xl: '1280px',
+        smOnly: { max: '767.98px' },
+        // => @media (min-width: 1280px) { ... }
+      },
+    },
   },
   plugins: [require('@tailwindcss/forms')],
 };

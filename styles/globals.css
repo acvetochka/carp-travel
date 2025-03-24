@@ -61,7 +61,7 @@ body {
   }
   
   .contact-bg {
-    background: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.75) 100%, rgba(0, 37, 49, 0.00) 100%), url('/contact-bg.png'),
+    background: linear-gradient(180deg, #001826 0%, #0A1813 0%, rgba(2, 15, 8, 0.75) 100%, rgba(0, 37, 49, 0.00) 100%), 
       url('/contacts-bg.jpg');
     height: 100%;
     background-repeat: no-repeat;
