@@ -16,9 +16,9 @@ This website is created for outdoor enthusiasts and nature lovers.
      ┣ 📜 page.tsx      # Main page component (homepage)
      ┗ 📜 layout.tsx    # Root layout component (wrapping all pages)
  ┣ 📂 components        # Reusable UI components
- ┣ 📂 sections 
+ ┣ 📂 sections          # Page sections
  ┣ 📂 data              # Static/local data (e.g., JSON)
- ┣ 📂 styles            # Shared styles
+ ┣ 📂 styles            # Shared styles, global styles
  ┗ 📜 README.md         # Project documentation
 ```
 
@@ -45,6 +45,7 @@ This repository contains the following main directories and files:
 
 - **app**: The main application logic and components.
 - **components**: Reusable React components used in the project.
+- **sections**: Page sections
 - **data**: Data files used by the website.
 - **public**: Public assets such as images, fonts, and static files.
 - **styles**: CSS and styling files for the project.
